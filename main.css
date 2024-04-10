@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#menu {
+    background-color: #282828;
+    padding: 7px;
+    text-align: center;
+    
+    box-shadow: 0 2px 4px rgba(71, 71, 71, 0.1); /* Agregar sombreado */
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: #f0f0f0;
+}
+#menu button {
+    background-color: #6c6c6c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu button:hover {
+    background-color: #777;
+}
+
+#characters-container, #comics-container, #series-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px; 
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+/* Estilos para los contenedores de personajes, cómics y series */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para las tarjetas (cards) */
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Agregar transición para el efecto de zoom */
+}
+
+/* Estilos para las imágenes en las tarjetas */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Agregar transición para el efecto de zoom */
+}
+
+/* Estilos para los títulos en las tarjetas */
+.card .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para las descripciones en las tarjetas */
+.card .description {
+    font-size: 14px;
+}
+
+/* Agregar efecto de zoom al pasar el mouse sobre la tarjeta */
+.card:hover {
+    transform: scale(1.1); /* Hacer la tarjeta 10% más grande al pasar el mouse */
+}
+
+/* Agregar efecto de zoom a la imagen al pasar el mouse sobre la tarjeta */
+.card:hover img {
+    transform: scale(1.1); /* Hacer la imagen 10% más grande al pasar el mouse */
+}
